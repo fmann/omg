@@ -2,7 +2,7 @@
 var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
-var site = 'http://miwomi.net/omg'
+var site = 'http://miwomi.net/omg/';
 var imgs = [
 "Animals-Also-Get-Surprised-016.jpg",
 "Surprised-Panther--57632.jpg",
@@ -44,7 +44,7 @@ app.use(logfmt.requestLogger());
 app.get('/', function(req, res) {
 
   var omg = {
-    'omg' : imgs[Math.floor((Math.random() * imgs.length))]
+    'omg' : site + imgs[Math.floor((Math.random() * imgs.length))]
   }
 
   res.send(omg);
