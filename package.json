@@ -6,8 +6,6 @@
   "dependencies": {
     "express": "~4.4.4",
     "logfmt": "~1.1.2",
-    "meteor": "~0.5.2-1",
-    "mustache": "~0.8.2"
   },
   "devDependencies": {},
   "scripts": {
