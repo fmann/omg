@@ -36,7 +36,7 @@ var imgs = [
 "tumblr_n4o3erkg3K1qewacoo8_500.png",
 "tumblr_n4o3erkg3K1qewacoo9_1280.png",
 "unnamed.jpg"
-]
+];
 
 
 app.use(logfmt.requestLogger());
@@ -45,10 +45,13 @@ app.get('/', function(req, res) {
 
   var omg = {
     'omg' : site + imgs[Math.floor((Math.random() * imgs.length))]
+  };
+
+  if (req.query.format == 'html'){
+    res.send('<img src="' + omg.omg + '" />');
+  } else {
+    res.send(omg);
   }
-
-  res.send(omg);
-
 });
 
 var port = Number(process.env.PORT || 5000);
