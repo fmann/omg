@@ -1,0 +1,26 @@
+{
+  "name": "omg",
+  "version": "0.0.1",
+  "description": "Return an IMG animal image",
+  "main": "omg.js",
+  "dependencies": {
+    "express": "~4.4.4",
+    "logfmt": "~1.1.2",
+    "meteor": "~0.5.2-1",
+    "mustache": "~0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmann/omg.git"
+  },
+  "author": "Floyd Mann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmann/omg/issues"
+  },
+  "homepage": "https://github.com/fmann/omg"
+}
